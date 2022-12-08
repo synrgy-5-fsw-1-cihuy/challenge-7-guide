@@ -56,7 +56,7 @@ Ketika browser mengakses URL `/profile`, maka komponen halaman `ProfilePage` aka
 
 ## index.js
 
-File index.js berisi kode untuk menginisialisasi aplikasi. File ini juga berfungsi sebagai file yang menghubungkan antara `App.js` dengan aplikasi yang dijalankan di browser (`index.html`).
+File `index.js` berisi kode untuk menginisialisasi aplikasi. File ini juga berfungsi sebagai file yang menghubungkan antara `App.js` dengan aplikasi yang dijalankan di browser (`index.html`).
 
 ## Components
 
