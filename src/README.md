@@ -15,6 +15,8 @@ File `App.js` berisi komponen utama dari aplikasi. Komponen ini akan di-render o
 ### Contoh
 
 ```js
+// src/App.js
+
 import { Route, Routes } from "react-router-dom";
 
 import AboutPage from "./pages/AboutPage";
@@ -72,11 +74,15 @@ Setiap file merepresentasikan sebuah halaman. File-file ini akan di-import oleh 
 
 # Additional
 
+## Layout
+
 Kalian dapat membuat sebuah layout yang akan selalu dirender di dalam aplikasi. Layout ini dapat berupa header, footer, sidebar, dan lain-lain. Layout ini dapat dibuat di dalam folder `components` dan di-import oleh komponen induk `App.js` untuk dirender di dalam aplikasi.
 
-## Contoh
+### Contoh
 
 ```js
+// src/App.js
+
 import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header";
@@ -104,3 +110,32 @@ export default App;
 ```
 
 Kode di atas memuat komponen `Header` dan `Footer` yang berada di dalam folder components. Komponen ini akan di-render oleh komponen induk `App.js` sebelum komponen-komponen halaman di-render. Jadi setiap halaman yang di-render akan memiliki header dan footer yang sama di dalam aplikasi tersebut.
+
+## CSS
+
+Kalian dapat menggunakan CSS untuk mengatur tampilan aplikasi. Kalian dapat menggunakan CSS yang sudah ada di dalam folder `public` atau menggunakan CSS yang sudah diinstall melalui NPM.
+
+### Contoh
+
+```js
+// src/App.js
+import { Route, Routes } from "react-router-dom";
+
+import "./style.css";
+
+import AboutPage from "./pages/AboutPage";
+import HomePage from "./pages/HomePage";
+
+function App() {
+  return (
+    <Routes>
+      <Route index element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
+    </Routes>
+  );
+}
+
+export default App;
+```
+
+Kode di atas memuat file `App.css` yang berada di dalam folder `src`. File ini berisi kode CSS yang akan digunakan untuk mengatur tampilan aplikasi.

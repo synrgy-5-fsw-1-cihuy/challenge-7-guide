@@ -31,6 +31,21 @@ Digunakan untuk mengatur routing di dalam aplikasi ini.
 
 Digunakan untuk membuat tampilan aplikasi ini menggunakan React Bootstrap.
 
+## How react-router-dom works
+
+React Router DOM adalah library yang digunakan untuk mengatur routing di dalam aplikasi ini.
+Routing adalah proses mengatur alur dari aplikasi kita.
+Misalnya, kita memiliki halaman home dan halaman about.
+Kita dapat mengatur routing di dalam aplikasi kita agar ketika kita mengakses halaman home, maka kita akan diarahkan ke halaman home.
+Ketika kita mengakses halaman about, maka kita akan diarahkan ke halaman about.
+
+Untuk mengatur routing di dalam aplikasi kita, kita dapat menggunakan komponen `BrowserRouter` dari library `react-router-dom`.
+
+- `Link` digunakan untuk membuat link ke route yang sudah dibuat di dalam aplikasi ini.
+- `Route` digunakan untuk membuat route di dalam aplikasi ini dan dapat digunakan sebagai child dari `Routes`.
+- `Routes` digunakan sebagai membungkus semua route di dalam aplikasi ini.
+- `BrowserRouter` digunakan untuk membuat routing di dalam aplikasi ini menggunakan browser history API.
+
 ## Folder Structure
 
 ```
@@ -43,3 +58,17 @@ src/
 ├── App.js
 └── index.js
 ```
+
+# FAQ
+
+- Apakah dapat menggunakan bootstrap biasa yang bukan react-bootstrap?
+
+Bisa, kalian juga dapat menggunakan frameworkcss lain untuk membuat tampilan aplikasi ini.
+
+- Apakah dapat menggunakan library lain selain yang sudah disebutkan di atas?
+
+Bisa, kalian bebas menggunakan library yang kalian inginkan sesuai dengan kebutuhan kalian.
+
+- Apakah dapat menggunakan CSS?
+
+Bisa, kalian bebas menggunakan CSS sesuai dengan kebutuhan kalian.
