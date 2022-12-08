@@ -69,3 +69,38 @@ Kalian dapat membuat komponen seperti header, footer, button, navlink, card, dan
 Folder pages berisi komponen-komponen yang berisi tampilan dan fungsi. Komponen-komponen ini berfungsi sebagai halaman-halaman yang ada di dalam aplikasi. Komponen-komponen ini akan di-render oleh komponen induk `App.js`. Komponen-komponen ini juga berfungsi sebagai komponen induk dari komponen-komponen yang ada di dalam aplikasi.
 
 Setiap file merepresentasikan sebuah halaman. File-file ini akan di-import oleh komponen induk `App.js` dan di-render ketika user mengakses halaman-halaman tersebut melalui URL browser yang sesuai dengan path yang ditentukan.
+
+# Additional
+
+Kalian dapat membuat sebuah layout yang akan selalu dirender di dalam aplikasi. Layout ini dapat berupa header, footer, sidebar, dan lain-lain. Layout ini dapat dibuat di dalam folder `components` dan di-import oleh komponen induk `App.js` untuk dirender di dalam aplikasi.
+
+## Contoh
+
+```js
+import { Route, Routes } from "react-router-dom";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+import AboutPage from "./pages/AboutPage";
+import HomePage from "./pages/HomePage";
+import ProfilePage from "./pages/ProfilePage";
+
+function App() {
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+      </Routes>
+      <Footer />
+    </>
+  );
+}
+
+export default App;
+```
+
+Kode di atas memuat komponen `Header` dan `Footer` yang berada di dalam folder components. Komponen ini akan di-render oleh komponen induk `App.js` sebelum komponen-komponen halaman di-render. Jadi setiap halaman yang di-render akan memiliki header dan footer yang sama di dalam aplikasi tersebut.
