@@ -10,7 +10,7 @@ src/
 
 ## App.js
 
-File App.js berisi komponen utama dari aplikasi. Komponen ini akan di-render oleh file index.js. Komponen ini juga berfungsi sebagai komponen induk dari komponen-komponen yang ada di dalam aplikasi. Komponen ini juga berfungsi sebagai komponen yang mengatur routing di dalam aplikasi menggunakan React Router DOM.
+File `App.js` berisi komponen utama dari aplikasi. Komponen ini akan di-render oleh file `index.js`. Komponen ini juga berfungsi sebagai komponen induk dari komponen-komponen yang ada di dalam aplikasi. Komponen ini juga berfungsi sebagai komponen yang mengatur routing di dalam aplikasi menggunakan React Router DOM.
 
 ### Contoh
 
@@ -56,7 +56,7 @@ Ketika browser mengakses URL `/profile`, maka komponen halaman `ProfilePage` aka
 
 ## index.js
 
-File index.js berisi kode untuk menginisialisasi aplikasi. File ini juga berfungsi sebagai file yang menghubungkan antara App.js dengan aplikasi yang dijalankan di browser (`index.html`).
+File index.js berisi kode untuk menginisialisasi aplikasi. File ini juga berfungsi sebagai file yang menghubungkan antara `App.js` dengan aplikasi yang dijalankan di browser (`index.html`).
 
 ## Components
 
