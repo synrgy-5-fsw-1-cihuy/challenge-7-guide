@@ -56,7 +56,8 @@ src/
 ├── components/
 ├── pages/
 ├── App.js
-└── index.js
+├── index.js
+└── style.css
 ```
 
 # FAQ
