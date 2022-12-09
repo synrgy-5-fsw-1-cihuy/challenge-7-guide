@@ -61,6 +61,25 @@ Ketika browser mengakses URL `/profile`, maka komponen halaman `ProfilePage` aka
 
 File `index.js` berisi kode untuk menginisialisasi aplikasi. File ini juga berfungsi sebagai file yang menghubungkan antara `App.js` dengan aplikasi yang dijalankan di browser (`index.html`).
 
+```js
+// src/index.js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
+```
+
+Kode di atas memuat komponen induk `App.js` dan menghubungkannya dengan aplikasi yang dijalankan di browser (`index.html`) melalui sebuah element dengan id `root` yang diinisialisasi di dalam file `index.html`. Kode di atas juga memuat komponen `BrowserRouter` yang berfungsi sebagai komponen yang mengatur routing di dalam aplikasi. Komponen ini akan me-render komponen induk `App.js` yang berisi komponen-komponen yang ada di dalam aplikasi seperti halaman-halaman, komponen-komponen yang berisi tampilan, dan lain-lain. Komponen ini akan di-render ketika user mengakses halaman-halaman tersebut melalui URL browser yang sesuai dengan path yang ditentukan. Komponen ini juga berfungsi sebagai komponen yang mengatur routing di dalam aplikasi menggunakan React Router DOM.
+
 ## Components
 
 Folder components berisi komponen-komponen yang digunakan di dalam aplikasi. Komponen-komponen ini dapat berupa komponen yang berisi tampilan, komponen yang berisi tampilan dan fungsi, dan lain-lain.
