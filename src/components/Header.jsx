@@ -30,6 +30,17 @@ const Header = () => {
               <Link to={navigation.path}>{navigation.name}</Link>
             </Nav.Link>
           ))}
+
+          {/* Sebenernya ini sama aja kayak yang diatas, cuma yang diatas lebih singka (sebenernya males aja sih ngulangin hal yang sama soalnya ada patternnya) */}
+          <Nav.Link>
+            <Link to="/">Home</Link>
+          </Nav.Link>
+          <Nav.Link>
+            <Link to="/about">About</Link>
+          </Nav.Link>
+          <Nav.Link>
+            <Link to="/profile">Profile</Link>
+          </Nav.Link>
         </Nav>
       </Container>
     </Navbar>
