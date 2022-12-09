@@ -120,6 +120,7 @@ Kalian dapat menggunakan CSS untuk mengatur tampilan aplikasi. Kalian dapat meng
 
 ```js
 // src/App.js
+
 import { Route, Routes } from "react-router-dom";
 
 import "./style.css";
@@ -139,4 +140,4 @@ function App() {
 export default App;
 ```
 
-Kode di atas memuat file `App.css` yang berada di dalam folder `src`. File ini berisi kode CSS yang akan digunakan untuk mengatur tampilan aplikasi.
+Kode di atas memuat file `style.css` yang berada di dalam folder `src`. File ini berisi kode CSS yang akan digunakan untuk mengatur tampilan aplikasi.
