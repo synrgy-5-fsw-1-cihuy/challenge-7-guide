@@ -133,7 +133,7 @@ Kode di atas memuat komponen `Header` dan `Footer` yang berada di dalam folder c
 
 ## CSS
 
-Kalian dapat menggunakan CSS untuk mengatur tampilan aplikasi. Kalian dapat menggunakan CSS yang sudah ada di dalam folder `public` atau menggunakan CSS yang sudah diinstall melalui NPM.
+Kalian dapat menggunakan CSS untuk mengatur tampilan aplikasi. Kalian dapat menggunakan CSS yang sudah ada di dalam folder `public` atau menggunakan CSS yang sudah diinstall melalui NPM atau CDN. Kalian juga dapat membuat file CSS sendiri dan mengimportnya ke dalam file `App.js` untuk digunakan di dalam aplikasi.
 
 ### Contoh
 
