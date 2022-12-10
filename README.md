@@ -6,6 +6,8 @@ Tolong baca [CASE](./CASE.md) untuk informasi lebih lanjut.
 
 Tolong baca [GUIDE](./GUIDE.md) untuk informasi lebih lanjut.
 
+API Menggunakan repository [https://github.com/synrgy-5-fsw-1-cihuy/challenge-7-dummy-server](https://github.com/synrgy-5-fsw-1-cihuy/challenge-7-dummy-server) sebagai server dummy untuk API yang digunakan.
+
 ## About
 
 Terdapat 2 folder yang dapat kalian lihat di dalam folder utama aplikasi ini:
