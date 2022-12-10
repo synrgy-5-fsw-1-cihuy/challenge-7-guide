@@ -5,7 +5,7 @@ const driverTypeOptions = [
   },
   {
     text: "Tanpa Sopir (Lepas Kunci)",
-    value: "0",
+    value: "2",
   },
 ];
 
