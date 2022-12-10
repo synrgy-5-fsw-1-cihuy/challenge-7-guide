@@ -1,6 +1,9 @@
 # Challenge 7 Guide
 
+Tujuan dari repository ini adalah sebagai contoh untuk membuat aplikasi dengan React berdasarkan [CASE](./CASE.md) yang telah disediakan. Jadi tidak boleh disalin secara utuh, tapi kalian harus membuat aplikasi dengan beberapa modifikasi agar tidak terlalu mirip dengan contoh ini.
+
 Tolong baca [CASE](./CASE.md) untuk informasi lebih lanjut.
+
 Tolong baca [GUIDE](./GUIDE.md) untuk informasi lebih lanjut.
 
 ## About
@@ -30,6 +33,10 @@ Digunakan untuk mengatur routing di dalam aplikasi ini.
 - [React Bootstrap](https://react-bootstrap.github.io/) (opsional, kalian dapat menggunakan library lain untuk membuat tampilan aplikasi ini)
 
 Digunakan untuk membuat tampilan aplikasi ini menggunakan React Bootstrap.
+
+## Pemecahan Komponen
+
+Pemecahan komponen dilakukan dengan memisahkan komponen-komponen yang ada di dalam aplikasi menjadi beberapa folder. Pemecahan komponen bergantung pada kebutuhan aplikasi. Pemecahan komponen yang baik adalah pemecahan komponen yang mempermudah pengembangan aplikasi. Cara pemecahan komponen pada repository ini bukan merupakan cara yang terbaik jadi silahkan melakukan pemecahan komponen sesuai dengan kebutuhan aplikasi.
 
 ## How react-router-dom works
 

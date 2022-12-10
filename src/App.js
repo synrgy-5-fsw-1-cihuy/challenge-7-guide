@@ -1,17 +1,23 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/bootstrap.css";
+import "./assets/style.css";
 import { Route, Routes } from "react-router-dom";
 
-import AboutPage from "./pages/AboutPage";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 import HomePage from "./pages/HomePage";
-import ProfilePage from "./pages/ProfilePage";
+import CarsPage from "./pages/CarsPage";
 
 function App() {
   return (
-    <Routes>
-      <Route index element={<HomePage />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/profile" element={<ProfilePage />} />
-    </Routes>
+    <>
+      <Navbar />
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="/cars" element={<CarsPage />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
