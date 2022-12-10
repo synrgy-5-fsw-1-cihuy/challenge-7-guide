@@ -1,4 +1,10 @@
-import React from "react";
+import {
+  FiCircle,
+  FiCalendar,
+  FiSettings,
+  FiUserCheck,
+  FiUserX,
+} from "react-icons/fi";
 
 const CarCard = ({ data }) => {
   return (
@@ -13,7 +19,7 @@ const CarCard = ({ data }) => {
             className="card-img-top img-center rounded"
           />
         </div>
-        <div className="card-body d-flex flex-column mt-3 gy-3">
+        <div className="card-body d-flex flex-column gy-3">
           <p>
             {data.manufacture}/{data.model}
           </p>
@@ -27,16 +33,28 @@ const CarCard = ({ data }) => {
             </b>
           </h5>
           <p>{data.description}</p>
-          <p>
-            <i className="feather-10" data-feather="circle" />
+          <p className="d-inline-flex">
+            {data.driverType === 1 ? (
+              <>
+                <FiUserCheck className="me-2" /> <span>Dengan Sopir</span>
+              </>
+            ) : (
+              <>
+                <FiUserX className="me-2" />{" "}
+                <span>Tanpa Sopir (Lepas Kunci)</span>
+              </>
+            )}
+          </p>
+          <p className="d-inline-flex">
+            <FiCircle className="me-2" />
             {data.capacity} orang
           </p>
-          <p>
-            <i className="feather-10" data-feather="settings" />{" "}
+          <p className="d-inline-flex">
+            <FiSettings className="me-2" />
             {data.transmission}
           </p>
-          <p>
-            <i className="feather-10" data-feather="calendar" /> Tahun{" "}
+          <p className="d-inline-flex">
+            <FiCalendar className="me-2" />
             {data.year}
           </p>
           <p>Tersedia: {new Date(data.availableAt).toLocaleString()}</p>

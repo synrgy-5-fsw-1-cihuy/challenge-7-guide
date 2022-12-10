@@ -32,19 +32,12 @@ const CarsPage = () => {
   const handleFilter = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    // const driverType = driverTypeE.current.value;
+    const driverType = Number(driverTypeE.current.value);
     const date = dateE.current.value;
     const time = timeE.current.value;
     const passenger = passengerE.current.value;
 
-    filterCar(
-      {
-        date,
-        time,
-        passenger,
-      },
-      cars
-    ).then((cars) => {
+    filterCar({ driverType, date, time, passenger }, cars).then((cars) => {
       setFilteredCars(cars);
       setIsLoading(false);
     });
@@ -75,8 +68,7 @@ const CarsPage = () => {
                       id="driver-type"
                       className="form-select trigger"
                       ref={driverTypeE}
-                      defaultValue=""
-                      required>
+                      defaultValue="">
                       <option value="" disabled>
                         Pilih Tipe Driver
                       </option>
@@ -97,7 +89,6 @@ const CarsPage = () => {
                       ref={dateE}
                       className="form-control trigger"
                       placeholder="Pilih Tanggal"
-                      required
                     />
                   </div>
                   <div>
@@ -108,8 +99,7 @@ const CarsPage = () => {
                       id="time"
                       ref={timeE}
                       className="form-select trigger"
-                      defaultValue=""
-                      required>
+                      defaultValue="">
                       <option value="" disabled>
                         Pilih Waktu
                       </option>

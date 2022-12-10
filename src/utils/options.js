@@ -1,11 +1,11 @@
 const driverTypeOptions = [
   {
     text: "Dengan Sopir",
-    value: "1",
+    value: 1,
   },
   {
     text: "Tanpa Sopir (Lepas Kunci)",
-    value: "2",
+    value: 2,
   },
 ];
 
