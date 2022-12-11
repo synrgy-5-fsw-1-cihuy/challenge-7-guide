@@ -146,7 +146,7 @@ const CarsPage = () => {
             {isLoading ? (
               <div
                 id="cars-container"
-                className="row row-cols-md-3 row-cols-1 g-3">
+                className="row row-cols-lg-3 row-cols-1 g-3">
                 {[0, 1, 2, 3, 4, 5].map((i) => (
                   <CarCardSkeleton key={`skeleton${i}`} />
                 ))}
@@ -154,7 +154,7 @@ const CarsPage = () => {
             ) : cars.length > 0 && filteredCars.length > 0 ? (
               <div
                 id="cars-container"
-                className="row row-cols-md-3 row-cols-1 g-3">
+                className="row row-cols-lg-3 row-cols-1 g-3">
                 {filteredCars.map((car) => (
                   <CarCard key={car.id} data={car} />
                 ))}
