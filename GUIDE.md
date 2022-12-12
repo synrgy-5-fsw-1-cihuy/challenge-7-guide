@@ -1,5 +1,26 @@
 # Guide
 
+Sebenarnya hal utama yang akan dilakukan adalah membuat aplikasi React berdasarkan tampilan pada challenge sebelumnya. Untuk mengkonversi HTML yang sebelumnya telah dibuat, kalian dapat menggunakan [HTML to JSX](https://magic.reactjs.net/htmltojsx.htm) untuk mengkonversi HTML ke JSX (uncheck "Create class").
+
+Route yang digunakan adalah sebagai berikut:
+
+- `/` untuk halaman utama (home) atau landing page.
+- `/cars` untuk halaman list mobil.
+
+Komponen halaman yang digunakan adalah sebagai berikut:
+
+- `Home` untuk halaman utama (home) atau landing page.
+- `Cars` untuk halaman list mobil. (Komponen ini akan mengkonsumsi API untuk mendapatkan data mobil. Kemudian, komponen ini akan menampilkan data mobil yang telah diambil dari API. Komponen ini juga akan menampilkan filter mobil berdasarkan tipe driver, tanggal, waktu, dan kapasitas penumpang.)
+
+Komponen tersebut nantinya akan digunakan pada route yang telah ditentukan di atas. Untuk membuat route, kalian dapat menggunakan `react-router-dom`.
+
+Redux yang digunakan adalah sebagai berikut:
+
+- `cars` untuk menyimpan data mobil.? belum tau
+- `filter` untuk menyimpan data filter.? belum tau
+
+# Challenge
+
 ## Membuat aplikasi React berdasarkan tampilan pada challenge sebelumnya.
 
 Untuk mengkonversi HTML yang sebelumnya telah dibuat, kalian dapat menggunakan [HTML to JSX](https://magic.reactjs.net/htmltojsx.htm) untuk mengkonversi HTML ke JSX (uncheck "Create class").
